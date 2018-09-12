@@ -66,7 +66,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   requestPermission() async {
-    bool res = await SimplePermissions.requestPermission(permission);
+    PermissionStatus res = await SimplePermissions.requestPermission(permission);
     print("permission request result is " + res.toString());
   }
 
